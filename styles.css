@@ -203,3 +203,56 @@ body {
     color: var(--grayish-blue);
     font-size: 0.8rem;
 }
+
+
+@media screen and (min-width: 768px) {
+
+    main {
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-wrapper {
+        max-width: 1200px;
+    }
+
+    .slides-container {
+        height: 26rem;
+    }
+
+    .testimony {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimony .image-container {
+        order: 1;
+    }
+
+    .testimony .image-container .text-container {
+        width: 50%;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: -7%;
+    }
+
+    .text-container .text {
+        font-size: 1.5rem;
+    }
+
+    .image-container {
+        justify-content: flex-start;
+    }
+
+    .image-container > img{
+        height: 450px;
+    }
+}
