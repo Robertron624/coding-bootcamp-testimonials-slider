@@ -1,0 +1,158 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+}
+
+.slider-wrapper {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container img{
+    width: 75%;
+    border-radius: 5px;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -13%;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 5rem;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-arrows .arrow {
+    width: 50%;
+    padding: .8rem .5rem;
+}
+
+.navigation-arrows .arrow img {
+    width: 38%;
+    margin: 0 auto;
+}
+
+.text-container {
+    margin-top: 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.text-container .quotes {
+    background-image: url(/images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 4.5rem 3rem;
+    height: 4rem;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+
+.text-container .text {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-container .name {
+    font-size: 1rem;
+}
+
+.text-container .job {
+    color: var(--grayish-blue);
+    font-size: 0.8rem;
+}
