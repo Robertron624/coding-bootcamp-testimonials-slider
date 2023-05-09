@@ -26,13 +26,12 @@ Users should be able to:
 - Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Screenshot
-
-
+![image](https://user-images.githubusercontent.com/72587880/236982892-207d089e-fd00-471c-abc7-a91f67e79de1.png)
 
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/Robertron624/coding-bootcamp-testimonials-slider)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://rainbow-toffee-de01f9.netlify.app/)
 
 ## My process
 
