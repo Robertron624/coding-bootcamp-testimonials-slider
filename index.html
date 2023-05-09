@@ -88,29 +88,34 @@
 
     const slides = document.querySelectorAll('.testimony');
 
+    const slidesContainer = document.querySelector(".slides-container");
+
 
     slides.forEach((testimony, index) => {
-      const slidesContainer = document.querySelector(".slides-container");
+
       const prevButton = testimony.children[0].children[1].children[0];
       const nextButton = testimony.children[0].children[1].children[1];
 
-      console.log("next btn -> ", nextButton)
-
-      console.log("prev btn -> ", prevButton)
-
-      nextButton.addEventListener("click", () => {
-
-
-        console.log("next button clicked")
-
-        const slideWidth = testimony.clientWidth;
-        slidesContainer.scrollLeft += slideWidth;
-      });
-
-      prevButton.addEventListener("click", () => {
-        console.log("prev button clicked")
+      function goLeft () {
         const slideWidth = testimony.clientWidth;
         slidesContainer.scrollLeft -= slideWidth;
+      }
+
+      function goRight () {
+        const slideWidth = testimony.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+      }
+
+      nextButton.addEventListener("click", goRight);
+
+      window.addEventListener("keyup", (e) => {
+        if (e.key === "ArrowRight") goRight();
+      });
+
+      prevButton.addEventListener("click", goLeft);
+
+      window.addEventListener("keyup", (e) => {
+        if (e.key === "ArrowLeft") goLeft();
       });
     })
   </script>
