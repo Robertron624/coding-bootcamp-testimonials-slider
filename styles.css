@@ -130,7 +130,7 @@ body {
     align-items: center;
     position: relative;
 
-    height: 23rem;
+    height: 21rem;
 }
 
 .image-container .bg-shape {
@@ -141,7 +141,7 @@ body {
 }
 
 .image-container .bg-shape > img {
-    height: 22rem;
+    height: 20.5rem;
 }
 
 .image-container > img{
@@ -154,7 +154,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 5%;
+    bottom: -4%;
     transform: translateY(-50%);
     background-color: white;
     width: 5rem;
@@ -223,7 +223,7 @@ body {
     }
 
     .slides-container {
-        height: 27rem;
+        height: 36rem;
     }
 
     .testimony {
@@ -250,12 +250,12 @@ body {
     }
 
     .testimony:nth-of-type(1) .text-container .quotes {
-        top: 15%;
+        top: 24%;
         background-position: top left 83px;
     }
 
     .testimony:nth-of-type(2) .text-container .quotes{
-        top: 9%;
+        top: 21%;
         background-position: top left 78px;
     }
 
@@ -265,6 +265,15 @@ body {
 
     .image-container {
         justify-content: flex-start;
+        height: 100%;
+    }
+
+    .image-container .bg-shape {
+        bottom: 19px;
+        right: 13%;
+    }
+    .image-container .bg-shape > img {
+        height: 34rem;
     }
 
     .image-container > img{
@@ -272,7 +281,7 @@ body {
     }
 
     .navigation-arrows {
-        bottom: -20%;
+        bottom: 4.5%;
         left: 7%;
     }
 }
