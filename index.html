@@ -21,8 +21,6 @@
   <main>
 
     <section class="slider-wrapper">
-
-
       <div class="slides-container">
         <div class="testimony">
           <div class="image-container">
@@ -66,6 +64,7 @@
             <img src="./images/image-john.jpg" alt="John Tarkpor" class="image">
           </div>
           <div class="text-container">
+            <div class="quotes"></div>
             <p class="text">
               “ If you want to lay the best foundation possible I’d recommend taking this course. 
               The depth the instructors go into is incredible. I now feel so confident about 
@@ -95,12 +94,21 @@
       const prevButton = testimony.children[0].children[1].children[0];
       const nextButton = testimony.children[0].children[1].children[1];
 
+      console.log("next btn -> ", nextButton)
+
+      console.log("prev btn -> ", prevButton)
+
       nextButton.addEventListener("click", () => {
+
+
+        console.log("next button clicked")
+
         const slideWidth = testimony.clientWidth;
         slidesContainer.scrollLeft += slideWidth;
       });
 
       prevButton.addEventListener("click", () => {
+        console.log("prev button clicked")
         const slideWidth = testimony.clientWidth;
         slidesContainer.scrollLeft -= slideWidth;
       });

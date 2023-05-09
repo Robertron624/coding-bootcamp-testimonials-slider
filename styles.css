@@ -165,6 +165,7 @@ body {
 .navigation-arrows .arrow {
     width: 50%;
     padding: .8rem .5rem;
+    cursor: pointer;
 }
 
 .navigation-arrows .arrow img {
@@ -207,6 +208,10 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    body {
+        background-size: 42rem;
+    }
+
     main {
         margin-inline: auto;
         display: flex;
@@ -218,7 +223,7 @@ body {
     }
 
     .slides-container {
-        height: 26rem;
+        height: 27rem;
     }
 
     .testimony {
@@ -244,6 +249,16 @@ body {
         margin-right: -7%;
     }
 
+    .testimony:nth-of-type(1) .text-container .quotes {
+        top: 15%;
+        background-position: top left 83px;
+    }
+
+    .testimony:nth-of-type(2) .text-container .quotes{
+        top: 9%;
+        background-position: top left 78px;
+    }
+
     .text-container .text {
         font-size: 1.5rem;
     }
@@ -254,5 +269,10 @@ body {
 
     .image-container > img{
         height: 450px;
+    }
+
+    .navigation-arrows {
+        bottom: -20%;
+        left: 7%;
     }
 }
